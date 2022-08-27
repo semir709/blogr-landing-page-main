@@ -13,5 +13,76 @@
     width: 100%;
     height: 400px;
     background: linear-gradient(0.25turn,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-   
+   border-radius: 0px 0px 0px 60px;
+}
+
+.navigation-container {
+
+    display: flex;  
+    width: 100%;
+    padding: 40px 100px;
+    align-items: center;
+
+}
+
+.logo {
+    margin-right: 60px;
+}
+
+.logo a{
+    color: #Fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    height: fit-content;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.nav li:hover {
+    cursor: pointer;
+}
+
+.btn-nav {
+    display: flex;
+}
+
+.btn-nav label {
+    color: #fff;
+}
+
+.btn-nav .arrow-holder {
+    margin-left: 10px;
+}
+
+.user-holder a{
+
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.user-holder button {
+
+    padding: 10px 20px;
+    background: #fff;
+    color: hsl(353, 100%, 62%);
+    border-radius: 20px;
+    border: none;
+
+    font-weight: 500;
+
 }
