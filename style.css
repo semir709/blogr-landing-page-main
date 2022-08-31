@@ -7,14 +7,23 @@
     box-sizing: border-box;
 
     font-family: 'Rubik', sans-serif;
+
+}
+
+body {
+    overflow-x:hidden;
 }
 
 .header-container {
     width: 100%;
-    height: 400px;
-    background: linear-gradient(0.25turn,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-   border-radius: 0px 0px 0px 60px;
+    min-height: 500px;
+    border-radius: 0px 0px 0px 60px;
+
+    background-image: url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(0.25turn,hsl(13, 100%, 72%) 10%, hsl(353, 100%, 62%));
+    background-position: -500px -1350px, 0px 0px;
+    background-repeat: no-repeat;
 }
+
 
 .navigation-container {
 
@@ -22,7 +31,7 @@
     width: 100%;
     padding: 40px 100px;
     align-items: center;
-
+    position: relative;
 }
 
 .logo {
@@ -56,12 +65,23 @@
     cursor: pointer;
 }
 
+.nav li:hover .btn-nav label {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .btn-nav {
     display: flex;
 }
 
 .btn-nav label {
     color: #fff;
+}
+
+.btn-nav label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    
 }
 
 .btn-nav .arrow-holder {
@@ -84,5 +104,134 @@
     border: none;
 
     font-weight: 500;
+
+}
+
+.user-holder button:hover {
+
+    cursor: pointer;
+    background-color: hsl(355, 100%, 74%);
+    color: #ffff;
+
+}
+
+/*Main info*/
+
+.main-info-container {
+    margin: 50px auto;
+    width: fit-content;
+}
+
+.main-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-info h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 75px;
+}
+
+.main-info p {
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+.info-buttons {
+    margin: 40px auto;
+    width: fit-content;
+}
+
+.info-buttons button {
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background: transparent;
+    margin-right: 10px;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.info-buttons button:first-child {
+    background-color: #fff;
+    color: hsl(353, 100%, 62%);
+    
+}
+
+.info-buttons button:first-child:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.info-buttons button:last-child:hover {
+    background-color: #FFF;
+    color: hsl(353, 100%, 62%);
+    cursor: pointer;
+    border: none;
+}
+
+/*Section one*/
+
+.img-holder {
+    width: 100%;
+    height: 100%;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-one {
+    text-align: center;
+    
+    margin-top: 80px;
+
+}
+
+.section-one h2 {
+    margin: 100px 0px 0px 0px;
+    color: hsl(208, 49%, 24%);
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.section-one-info {
+    margin: 5% 0px 0px 15%;
+    text-align: left;
+    color: hsl(207, 13%, 34%);
+    width: 50%;
+}
+
+.info {
+    margin-bottom: 60px;
+}
+
+.info h3 {
+    color:  hsl(208, 49%, 24%);
+}
+
+.info p {
+    margin-top: 20px;
+    line-height: 28px;
+    max-width: 535px;
+}
+
+.section-img {
+
+    width: 50%;
+    position: absolute;
+    right: -15%;
+    
 
 }
