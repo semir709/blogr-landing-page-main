@@ -290,3 +290,35 @@ body {
     color: hsl(240, 2%, 79%);
     line-height: 25px;
 }
+
+/*FOOTER*/
+
+.footer {
+    background-color: hsl(240, 10%, 16%);
+    width: 100%;
+    color: #fff;
+    display: flex;
+    padding: 50px 150px;
+    border-radius: 0px 60px 0px 0px;
+}
+
+.footer > div {
+    flex: 1;
+}
+
+.footer p{
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    color: hsl(240, 2%, 79%);
+}
+
+.footer ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
