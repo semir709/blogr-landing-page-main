@@ -70,6 +70,48 @@ body {
     text-decoration: underline;
 }
 
+.highlight {
+    text-decoration: underline;
+}
+
+.nav li {
+    position: relative;
+}
+
+/*hidden list*/
+
+.show {
+    display: block !important;
+}
+
+.rotation {
+    transform:rotate(180deg);
+}
+
+.list {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 150px;
+    top: 30px;
+    left: -15px;
+    font-weight: 400;
+}
+
+.list li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list li:hover {
+
+    font-weight: 500;
+}
+
+/**/
+
 .btn-nav {
     display: flex;
 }
@@ -298,7 +340,7 @@ body {
     width: 100%;
     color: #fff;
     display: flex;
-    padding: 50px 150px;
+    padding: 50px 10%;
     border-radius: 0px 60px 0px 0px;
 }
 
@@ -316,6 +358,7 @@ body {
     list-style: none;
     margin-bottom: 15px;
     color: hsl(240, 2%, 79%);
+    width: fit-content;
 }
 
 .footer ul li:hover {
