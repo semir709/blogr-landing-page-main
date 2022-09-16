@@ -29,7 +29,7 @@ body {
 
     display: flex;  
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px 10%;
     align-items: center;
     position: relative;
 }
@@ -180,6 +180,8 @@ body {
 
     display: none;
 }
+
+/*query for the navigation*/
 
 @media (max-width: 880px) {
 
@@ -366,6 +368,24 @@ body {
     color: hsl(353, 100%, 62%);
     cursor: pointer;
     border: none;
+}
+
+/*query for the main section*/
+
+@media (max-width: 750px) {
+
+    .header-container {
+        background-image: url('./images/bg-pattern-intro-mobile.svg'),
+        linear-gradient(hsl(13, 100%, 72%) 10%, hsl(353, 100%, 62%));
+        background-size: 1450px, 100%;
+        background-position: 35% 39%, 0px 0px;
+        background-repeat: no-repeat;
+    }
+
+    .main-info h1 {
+        font-size: 35px;
+    }
+
 }
 
 
