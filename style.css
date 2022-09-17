@@ -666,12 +666,15 @@ body {
     width: 100%;
     color: #fff;
     display: flex;
-    padding: 50px 10%;
+    padding: 50px 0px;
     border-radius: 0px 60px 0px 0px;
+
+    justify-content: space-around;
 }
 
-.footer > div {
-    flex: 1;
+.footer h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
 }
 
 .footer p{
@@ -690,4 +693,27 @@ body {
 .footer ul li:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media (max-width: 470px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: none;
+        align-items: center;
+    }
+
+    .col-footer {
+        width: 100px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .col-footer ul li {
+        width: inherit;
+        text-align: center;
+    }
+
 }
