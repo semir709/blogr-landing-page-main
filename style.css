@@ -469,7 +469,7 @@ body {
 
 @media(max-width: 1225px) {
 
-    .info .info-det {
+    .info .info-:first-child {
         margin-left: 5%;
         
     }
