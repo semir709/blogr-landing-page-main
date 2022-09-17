@@ -8,6 +8,8 @@
 
     font-family: 'Rubik', sans-serif;
 
+    /* outline: 3px solid limegreen !important; */
+
 }
 
 body {
@@ -537,7 +539,8 @@ body {
     border-radius: 0px 60px 0px 60px;
     margin: 30px 0px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns:1fr 2fr;
 
     background-image: url('./images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
@@ -562,7 +565,7 @@ body {
 /*middle info*/
 
 .middle-section .middle-info {
-    width: 100px;
+    max-width: 550px;
     height: fit-content;
     padding: 85px 0px;
 }
@@ -576,13 +579,85 @@ body {
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 20px;
-    width: 550px;
+    width: inherit;
 }
 
 .middle-section .middle-info p {
     color: hsl(240, 2%, 79%);
     line-height: 25px;
+    width: inherit;
 }
+
+@media(max-width: 1050px) {
+
+    .middle-section {
+
+        grid-template-columns:1fr 1fr;
+    
+    }
+
+    .middle-section .middle-info {
+
+        padding: 3em 0px;
+
+    }
+}
+
+@media(max-width: 950px) {
+
+    .middle-section {
+        background-color: hsl(237, 17%, 21%);
+        height: 550px;
+        margin: 200px 0px 30px 0px;
+        display: block;
+        background-image: url('./images/bg-pattern-circles.svg');
+        background-repeat: no-repeat;
+        background-size: 600px;
+        background-position: 50% -240px;
+
+        position: relative;
+    
+      }
+
+
+      .middle-section .middle-img {
+        width: 400px;
+
+        position: absolute;
+        left: 50%;
+        top: -200px;
+        transform: translate(-50%);
+      }
+
+      .middle-section .middle-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+        transform: none;
+      }
+
+      .middle-section .middle-info {
+        min-width: 100%;
+        height: fit-content;
+        text-align: center;
+        padding: 0px 100px;
+
+        position: absolute;
+        bottom: 0px;
+
+        margin-bottom: 100px;
+      }
+
+}
+
+@media (max-width: 620px) {
+
+    .middle-section .middle-info {
+        padding: 0px 30px;
+      }
+}
+
 
 /*FOOTER*/
 
